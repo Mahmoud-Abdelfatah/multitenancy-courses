@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www
+    environment:
+      ADMIN_EMAIL: admin@admin.com
+      ADMIN_PASSWORD: welcome123  
+      
+    networks:
+      - laravel
+
+networks:
+  laravel:
+    driver: bridge
