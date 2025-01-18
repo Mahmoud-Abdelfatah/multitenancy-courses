@@ -16,7 +16,7 @@ This repository demonstrates a Laravel-based multitenancy implementation for man
    - Copy the contents of `.env-example` to a new file named `.env`.
 
 2. **Create the SQLite database file:**
-   - In the root directory, create a new file named `database.sqlite`. This will be used as the application's database.
+   - In the database directory, create a new file named `database.sqlite`. This will be used as the application's database.
 
 3. **Install PHP dependencies using Composer:**   
 
